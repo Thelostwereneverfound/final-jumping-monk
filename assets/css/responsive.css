@@ -601,13 +601,20 @@
   }
 
   .cpy-right-wrap::after {
-    height: 484px;
-    top: calc(29% - 348px / 2);
-    left: unset;
-    width: 100%;
-    background: url(../img/tree-shape-2.png);
-    transform: scaleX(1.5);
-  }
+    content: "";
+    display: block;
+    height: 300px; /* Adjust the height to fit within phone screens */
+    width: 300px;  /* Adjust the width to fit within phone screens */
+    background: url('../img/tinywow_change_bg_photo_61058066 copy.png') no-repeat center center;
+    background-size: contain; /* Ensures the image fits within the container */
+    position: absolute;
+    top: 50%;
+   
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image */
+
+}
+
   .features-area .getItNow-title.shape::after {
     background-size: contain;
     max-width: 30px;
